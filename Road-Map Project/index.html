@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Road-Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="./assets/icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <a href="./home.html"><img src="./assets/logo.png" class="position-fixed m-3" width="300" alt=""></a>
+  <div class="container">
+    <div class="row px-4 d-flex justify-content-center align-items-center">
+      <div class="col-md-4 p-4 mb-3" id="colbox">
+        <div class="h3 mb-3 text-center">Login Account</div>
+        <div class="card-body">
+          <form onsubmit="handleLogin(event)">
+            <div class="form-outline mb-2">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control ps-5" id="username" name="email" placeholder="Email" required />
+              <i class="fa fa-envelope" id="em" aria-hidden="true"></i>
+              <span id="emailError" class="error-message  text-danger" style="display: none;">Please enter a valid
+                email
+                address.</span>
+            </div>
+
+            <div class="form-outline mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control ps-5" id="password" name="password" placeholder="Password"
+                required />
+              <i class="fa fa-lock"></i>
+            </div>
+            <div class="d-grid justify-content-center">
+              <button type="submit" class="btn">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="footer text-center mt-2">
+          Don't have an account?
+          <a href="./register.html" class="">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./main.js"></script>
+
+</html>

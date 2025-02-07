@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  color: white;
+  background: #0033a0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-btn .btn {
+  width: 100px;
+  font-size: larger;
+}
+
+.logo-box img {
+  cursor: pointer;
+  width: 50px;
+}
+
+.logo-box h3 {
+  cursor: pointer;
+}
+
+.row4 .p {
+  width: 250px;
+}
+
+.col {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+.p {
+  width: 280px;
+  height: 50px;
+  color: white;
+  background: linear-gradient(to right, rgb(86, 230, 255), #316ff6);
+  cursor: pointer;
+  font-size: larger;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.p:hover {
+  background: linear-gradient(to left, rgb(86, 230, 255), #316ff6);
+}
+
+.footer {
+  height: auto;
+}
+
+.list-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list a {
+  font-size: larger;
+  cursor: pointer;
+}
+
+.about p {
+  font-size: larger;
+}
+
+.content {
+  background-color: white;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 5px;
+  width: 45vw;
+  height: 87vh;
+  position: fixed;
+  right: 1%;
+  top: 13%;
+  display: none;
+  overflow-y: scroll;
+  color: black;
+}
+
+.con-img {
+  width: 400px;
+  height: auto;
+  transform: translateX(50px);
+}
+
+#cross {
+  font-weight: bold;
+  font-size: large;
+  position: absolute;
+  right: 12px;
+  top: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 720px) {
+  .gen,
+  .list {
+    width: 100%;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col p {
+    width: 100%;
+  }
+
+  .list-box {
+    max-width: 350px;
+  }
+
+  .row {
+    text-align: center;
+  }
+
+  .about {
+    margin-top: 30px;
+  }
+
+  .content {
+    left: 1px;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: 2s;
+  }
+
+  .con-img {
+    width: 300px;
+    height: auto;
+    transform: translateX(0px);
+  }
+}

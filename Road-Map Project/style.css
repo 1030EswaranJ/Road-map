@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  color: white;
+  background: violet;
+}
+
+
+.h3 {
+  color: #316ff6 !important;
+}
+
+.row {
+  height: 80vh;
+}
+
+p {
+  font-weight: 500;
+}
+
+.col-md-5 {
+  backdrop-filter: blur(5px) !important;
+  background: #eeeded;
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-bottom: 1.5px solid #316ff6 !important;
+}
+
+.form-control {
+  border-radius: 0 !important;
+  border: 0 !important;
+  border-bottom: 1.5px solid #316ff6 !important;
+  background: transparent !important;
+}
+
+.form-outline1 i {
+  pointer-events: none;
+  position: relative;
+  bottom: 32px;
+  left: 15px;
+}
+
+.form-outline2 i {
+  font-size: larger;
+  pointer-events: none;
+  position: relative;
+  bottom: 32px;
+  left: 18px;
+}
+
+.btn {
+  background-color: #316ff6 !important;
+  width: 200px;
+  color: white !important;
+  font-size: 1.2rem !important;
+}
+
+.btn:hover {
+  background-color: rgb(0, 0, 255) !important;
+}
+
+.footer a:hover {
+  color: grey !important;
+  transition: 0.5s;
+}
+
+i {
+  color: #316ff6;
+}
+
+.logo-box img {
+  cursor: pointer;
+  width: 50px;
+}
+
+.logo-box h3 {
+  cursor: pointer;
+}
+
+.user {
+  pointer-events: none;
+  width: 100px;
+  top: -15%;
+  left: 38.6%;
+}
+
+label {
+  font-weight: bold;
+}

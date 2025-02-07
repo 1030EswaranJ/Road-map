@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="header px-5">
+        <div class="logo-box d-flex" onclick="home()"></div>
+        <div class="right-side" id="rside">
+            <nav>
+                <span>About</span>
+                <span>courses</span>
+                <span>Contact</span>
+            </nav>
+            <div class="login-btn">
+                <a href="./index.html" class="btn">Login</a>
+            </div>
+        </div>
+        <i class="fa fa-bars" id="b" onclick="menu('rside')"></i>
+    </div>
+    <div class="container">
+        <div class="h1 text-center my-5">Back-End</div>
+        <div class="row mb-5">
+            <div class="h2 mb-4">Programming Languages</div>
+            <p>
+                You should have a<b> good understanding of at least one backend programming language</b> such as Python,
+                JavaScript (Node.js), Ruby, PHP, Java, or C#. Familiarity with concepts <b>like data types, variables,
+                    control structures, functions, and object-oriented programming is essential....</b>
+            </p>
+            <div class="col mt-5">
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('java')">
+                    Java
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('py')">
+                    Python
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('php')">
+                    PHP
+                </p>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col">
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('nj')">
+                    Node.js
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('ruby')">
+                    Ruby
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('c#')">
+                    C#
+                </p>
+            </div>
+        </div>
+        <hr />
+        <div class="row mb-5">
+            <div class="h2 mb-4">Databases</div>
+            <p>
+                Learn about different types of databases <b>(relational and non-relational), SQL (Structured Query
+                    Language), database design principles, normalization, and basic CRUD (Create, Read, Update,
+                    Delete)</b>
+                operations. Popular databases include MySQL, PostgreSQL, MongoDB, and SQLite.
+            </p>
+            <div class="h3 mt-5 mb-3">Relational Databases</div>
+            <div class="col">
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('mysql')">
+                    MySQL
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('postsql')">
+                    PostgreSQL
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('sqllite')">
+                    SQLite
+                </p>
+            </div>
+            <div class="h3 mt-5 mb-3">Non-Relational Databases</div>
+            <div class="col">
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('md')">
+                    MongoDB
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('cass')">
+                    Cassandra
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('redis')">
+                    Redis
+                </p>
+            </div>
+        </div>
+        <hr />
+        <div class="row mb-5">
+            <div class="h2">Backend Frameworks</div>
+            <p>
+                Familiarize yourself with <b>one or more backend frameworks such as Spring Boot (for Java), Django (for
+                    Python), Laravel (for PHP), Express.js (for Node.js),Ruby on Rails,
+                    ASP.NET, or Symfony (for C#)</b>. Understand their architecture, features, and how to
+                use them to build web applications and APIs.
+            </p>
+            <div class="col mt-5">
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('sb')">
+                    Spring Boot
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('dj')">
+                    Django
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('lara')">
+                    Laravel
+                </p>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col">
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('express')">
+                    Express.js
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('rubyon')">
+                    Ruby on Rails
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('net')">
+                    ASP.NET
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-5">
+            <div class="h2">API</div>
+            <p>
+                API(Application Programming Interface), <b>is a set of rules, protocols, and tools that allows different
+                    software applications to communicate with each other.</b> It defines the <b> methods and data
+                    formats that
+                    applications can use to request and exchange information.</b>
+            </p>
+            <div class="h5">API Development</div>
+            <p>Learn how to design and implement APIs for communication between
+                different components of a software application. <b>Understand RESTful API principles, HTTP methods,
+                    status
+                    codes, authentication, and serialization formats like JSON and XML.</b>
+            </p>
+            <div class="col mt-5">
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('api')">
+                    RESTful API
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('http')">
+                    HTTP methods
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('status')">
+                    Status
+                    Codes
+                </p>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col">
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('auth')">
+                    Authentication
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('json')">
+                    JSON
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="content('xml')">
+                    XML
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr />
+    <div class="footer  p-5 text-white">
+        <div class="row">
+            <div class="col-3 others gen">
+                <h2>Other Road-Maps</h3>
+                    <div class="list-box mt-2">
+                        <div class="list" onclick="location.href = './fe.html'">
+                            <a href="./fe.html"><b>Front-End</b><a>
+                                    <a>HTML</a>
+                                    <a>CSS</a>
+                                    <a>JavaScript</a>
+                        </div>
+                        <div class="list" onclick="location.href = './be.html'">
+                            <a href="./be.html"><b>Back-End</b></a>
+                            <a>Java</a>
+                            <a>MySQL</a>
+                            <a>API</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-6 about gen">
+                <h2>About</h2>
+                <p>It seems like you're asking for a roadmap. A roadmap typically refers to a strategic plan or guide
+                    that
+                    outlines the steps needed to achieve a particular goal or objective. Since you haven't specified the
+                    topic or
+                    field, I'll provide a general roadmap for personal or professional development.</p>
+            </div>
+            <div class="col-3 gen">
+                <div class="list about">
+                    <a><b>Contact Us</b></a>
+                    <a><b>Email :</b> sample@gmail.com</a>
+                    <a><b>Help-center : </b>95******24</a>
+                    <a><b>Address : </b> State, District, City, Village </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-rights text-center py-4 text-white">
+        <b>© Copyright 2021-2024 www.Road-Map.com. All rights reserved. Developed by Astronet.</b>
+    </div>
+
+
+    <!-- JAVA CONTENT START---------------------------------------------->
+    <div class="content p-5" id="java">
+        <span id="cross" onclick="undo('java')">╳</span>
+        <h4 class="p-3 text-center">Java</h4>
+        <p>Java is a widely used, high-level, object-oriented programming language developed by Sun Microsystems
+            (now owned by Oracle Corporation). It was first released in 1995 and has since become one of the most
+            popular programming languages in the world.</p>
+        <p>Java is known for its platform independence, meaning that Java programs can run on any device or
+            operating system that has a Java Virtual Machine (JVM) installed, without needing to be recompiled. This
+            is achieved through the principle of "Write Once, Run Anywhere" (WORA).</p>
+        <b>Programming Concepts : </b>
+        <p>Familiarize yourself with fundamental programming concepts such as <b>variables, data types, control
+                structures (if statements, loops), functions/methods, and basic algorithms.</b> Even if you're new
+            to
+            programming, resources like online tutorials, books, and introductory courses can help you grasp these
+            concepts.
+        </p>
+        <b>Java Development Environment Setup :</b>
+        <p>Install a Java Development Kit (JDK) on your computer. The JDK includes
+            the Java compiler (javac), runtime environment (JRE), and other development tools necessary for writing
+            and
+            running Java programs. Popular choices for IDEs include IntelliJ IDEA, Eclipse, and NetBeans.</p>
+        <b>
+            <ul>Basic Concepts:
+        </b>
+        <li>Syntax and structure of the Java language</li>
+        <li>Collections framework (lists, sets, maps, queues)</li>
+        <li>Exception handling</li>
+        <li>Input/output (I/O) operations</li>
+        <li>Generics</li>
+        <li>Concurrency (threads, synchronization)</li>
+        </ul>
+        <b>
+            <ul>Core Java Libraries :
+        </b>
+        <li>String manipulation</li>
+        <li>Data types, variables, and operators</li>
+        <li>Control flow statements (if-else, loops)</li>
+        <li>Methods and functions</li>
+        <li>Object-oriented programming concepts (classes, objects, inheritance, polymorphism, encapsulation)</li>
+        </ul>
+        <b>
+            <ul>Advanced Java Concepts :
+        </b>
+        <li>Annotations and reflection</li>
+        <li>Serialization and deserialization</li>
+        <li>Lambda expressions and functional interfaces</li>
+        <li>Java Stream API for processing collections</li>
+        <li>Java Database Connectivity (JDBC) for database interaction</li>
+        <li>Java Virtual Machine (JVM) internals and memory management</li>
+        </ul>
+        <ul><b>Java Frameworks :</b>
+            <li>Spring Framework for building enterprise applications</li>
+            <li>Hibernate or other ORM (Object-Relational Mapping) frameworks</li>
+            <li>Apache Struts, Play Framework, or Java EE for web application development</li>
+        </ul>
+    </div>
+    <!-- JAVA CONTENT END---------------------------------------------->
+    <!-- PYTHON CONTENT START---------------------------------------------->
+    <div class="content p-5" id="py">
+        <span id="cross" onclick="undo('py')">╳</span>
+        <h4 class=" p-3 text-center">Python</h4>
+        <p>Python is a high-level, interpreted programming language known for its simplicity, readability, and
+            versatility. Developed in the late 1980s by Guido van Rossum, Python has since become one of the most
+            popular programming languages worldwide, used for a wide range of applications in various domains
+            including web development, data analysis, artificial intelligence, scientific computing, automation, and
+            more.</p>
+        <b>Simple and Readable Syntax : </b>
+        <p>Python emphasizes readability and uses a clean and straightforward syntax,
+            making it easy to write and understand code, even for beginners.</p>
+        <section>
+            <b>Basic Python Syntax and Data Types:</b>
+            <ul>
+                <li>Variables, expressions, and statements</li>
+                <li>Data types: integers, floats, strings, lists, tuples, dictionaries, sets</li>
+                <li>Basic operations and built-in functions</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Control Flow and Loops:</b>
+            <ul>
+                <li>Conditional statements (if, elif, else)</li>
+                <li>Loops (for, while)</li>
+                <li>Break and continue statements</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Functions and Modules:</b>
+            <ul>
+                <li>Defining and calling functions</li>
+                <li>Parameters and arguments</li>
+                <li>Returning values</li>
+                <li>Scope of variables</li>
+                <li>Importing modules</li>
+                <li>Creating and using custom modules</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Data Structures and Manipulation:</b>
+            <ul>
+                <li>Lists: indexing, slicing, appending, concatenating, sorting</li>
+                <li>Tuples and sets: creating, accessing elements, operations</li>
+                <li>Dictionaries: key-value pairs, accessing, adding, and modifying items</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>File Handling:</b>
+            <ul>
+                <li>Reading from and writing to files</li>
+                <li>Opening, closing, and manipulating files</li>
+                <li>Handling exceptions (try, except, finally)</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Object-Oriented Programming (OOP):</b>
+            <ul>
+                <li>Classes and objects</li>
+                <li>Inheritance, encapsulation, and polymorphism</li>
+                <li>Constructors and destructors</li>
+                <li>Method overriding and overloading</li>
+            </ul>
+        </section>
+    </div>
+    <!-- PYTHON CONTENT END---------------------------------------------->
+    <!-- PHP CONTENT START---------------------------------------------->
+    <div class="content p-5" id="php">
+        <span id="cross" onclick="undo('php')">╳</span>
+        <h4 class="p-3 text-center">PHP</h4>
+        <p>PHP is a widely used server-side scripting language designed primarily for web development. It was
+            created by Rasmus Lerdorf in 1994 and has since evolved into a powerful and versatile language. PHP
+            originally stood for "Personal Home Page," but it now stands for "PHP: Hypertext Preprocessor."</p>
+        <section>
+            <b>Basic PHP Syntax and Language Constructs:</b>
+            <ul>
+                <li>Variables, data types, and operators</li>
+                <li>Control structures: if statements, loops (for, while, do-while), switch statements</li>
+                <li>Functions and their usage</li>
+                <li>Arrays and their manipulation</li>
+                <li>Strings and string manipulation functions</li>
+                <li>Constants and their usage</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Form Handling and Data Validation:</b>
+            <ul>
+                <li>Processing form data using PHP</li>
+                <li>Validating user input (e.g., filtering input, sanitizing data)</li>
+                <li>Handling file uploads</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Working with Databases:</b>
+            <ul>
+                <li>Connecting to databases (e.g., MySQL, PostgreSQL, SQLite) using PHP</li>
+                <li>Performing CRUD (Create, Read, Update, Delete) operations on databases</li>
+                <li>SQL queries and prepared statements for database interaction</li>
+                <li>Handling database errors and exceptions</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Sessions and Cookies:</b>
+            <ul>
+                <li>Managing user sessions with session variables</li>
+                <li>Using cookies for persistent data storage</li>
+                <li>Security considerations related to sessions and cookies</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>File Handling and I/O Operations:</b>
+            <ul>
+                <li>Reading from and writing to files</li>
+                <li>File permissions and security</li>
+                <li>File system operations (e.g., file manipulation, directory handling)</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Error Handling and Debugging:</b>
+            <ul>
+                <li>Understanding PHP error types and error reporting levels</li>
+                <li>Handling errors gracefully with try-catch blocks</li>
+                <li>Debugging techniques and tools (e.g., using var_dump(), print_r(), Xdebug)</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Object-Oriented PHP:</b>
+            <ul>
+                <li>Understanding classes and objects</li>
+                <li>Constructors, destructors, and class methods</li>
+                <li>Inheritance, polymorphism, and encapsulation</li>
+                <li>Namespaces and autoloading</li>
+            </ul>
+        </section>
+    </div>
+    <!-- PHP CONTENT END---------------------------------------------->
+    <!-- MYSQL CONTENT START---------------------------------------------->
+    <div class="content p-5" id="mysql">
+        <span id="cross" onclick="undo('mysql')">╳</span>
+        <h4 class="p-3 text-center">MySQL</h4>
+        <p>MySQL is an open-source relational database management system (RDBMS) that is widely used for managing
+            structured data. It was first released in 1995 by Swedish company MySQL AB and later acquired by Sun
+            Microsystems (now part of Oracle Corporation). MySQL is known for its reliability, performance, ease of
+            use, and scalability, making it one of the most popular database systems in the world.</p>
+        <section>
+            <b>Introduction to Relational Databases:</b>
+            <ul>
+                <li>Understanding the concepts of databases, tables, records, and fields</li>
+                <li>Overview of relational database management systems (RDBMS)</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>MySQL Installation and Configuration:</b>
+            <ul>
+                <li>Installing MySQL server on different platforms (Windows, Linux, macOS)</li>
+                <li>Configuring MySQL server settings and options</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Database Design and Modeling:</b>
+            <ul>
+                <li>Entity-Relationship (ER) modeling</li>
+                <li>Normalization techniques (1NF, 2NF, 3NF, BCNF) for designing efficient databases</li>
+                <li>Creating tables with appropriate data types, constraints, and relationships</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>SQL Basics:</b>
+            <ul>
+                <li>Writing SQL queries (SELECT, INSERT, UPDATE, DELETE)</li>
+                <li>Filtering and sorting data with WHERE and ORDER BY clauses</li>
+                <li>Grouping and aggregating data with GROUP BY and aggregate functions (SUM, AVG, COUNT, etc.)</li>
+                <li>Joining tables using INNER JOIN, LEFT JOIN, RIGHT JOIN, and OUTER JOIN</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Advanced SQL Queries:</b>
+            <ul>
+                <li>Subqueries (nested queries)</li>
+                <li>Set operations (UNION, INTERSECT, EXCEPT)</li>
+                <li>Conditional expressions (CASE statements)</li>
+                <li>Using stored procedures, functions, and triggers</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Indexes and Optimization:</b>
+            <ul>
+                <li>Understanding indexes and their types (e.g., B-tree, hash)</li>
+                <li>Creating and managing indexes for improving query performance</li>
+                <li>Query optimization techniques (e.g., EXPLAIN, analyzing query execution plans)</li>
+                <li>Optimizing database schema and table structures</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Transactions and Concurrency Control:</b>
+            <ul>
+                <li>Understanding transactions and ACID properties (Atomicity, Consistency, Isolation, Durability)</li>
+                <li>Managing transactions using COMMIT, ROLLBACK, and SAVEPOINT statements</li>
+                <li>Implementing concurrency control mechanisms (e.g., locking, isolation levels)</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>MySQL Security:</b>
+            <ul>
+                <li>Authentication methods and user management</li>
+                <li>Granting and revoking privileges</li>
+                <li>Securing the MySQL server and data (e.g., encryption, SSL/TLS)</li>
+            </ul>
+        </section>
+    </div>
+    <!-- MYSQL CONTENT END---------------------------------------------->
+    <!-- MONGODB CONTENT START---------------------------------------------->
+    <div class="content p-5" id="md">
+        <span id="cross" onclick="undo('md')">╳</span>
+        <h4 class="p-3 text-center">MongoDB</h4>
+        <p>MongoDB is a widely used NoSQL (Not Only SQL) database management system that stores data in a flexible,
+            document-based format called BSON (Binary JSON). It is designed for scalability, high performance, and ease
+            of development, particularly for applications with rapidly changing or evolving data requirements. MongoDB
+            is developed by MongoDB Inc. and released as open-source software.</p>
+        <section>
+            <b>Introduction to NoSQL Databases:</b>
+            <ul>
+                <li>Understanding the characteristics and advantages of NoSQL databases over relational databases.</li>
+                <li>Overview of document-oriented databases and MongoDB.</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>MongoDB Installation and Configuration:</b>
+            <ul>
+                <li>Installing MongoDB on various platforms (Windows, Linux, macOS).</li>
+                <li>Configuring MongoDB server settings and options.</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Basic MongoDB Concepts:</b>
+            <ul>
+                <li>Document structure: understanding BSON (Binary JSON) format, fields, and values.</li>
+                <li>Collections and documents: organizing data into collections and individual documents.</li>
+                <li>MongoDB data model compared to relational databases.</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>CRUD Operations:</b>
+            <ul>
+                <li>Creating, reading, updating, and deleting documents in MongoDB.</li>
+                <li>Using the insertOne(), insertMany(), find(), updateOne(), updateMany(), deleteOne(), and
+                    deleteMany() methods.</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Querying Data:</b>
+            <ul>
+                <li>Querying documents using various operators (e.g., comparison, logical, element, array).</li>
+                <li>Projection: selecting specific fields to return in query results.</li>
+                <li>Sorting and limiting query results.</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Indexing and Performance Optimization:</b>
+            <ul>
+                <li>Creating and managing indexes for improving query performance.</li>
+                <li>Understanding index types (e.g., single field, compound, multikey, text, geospatial).</li>
+                <li>Using the explain() method to analyze query performance and index usage.</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Aggregation Framework:</b>
+            <ul>
+                <li>Performing complex data aggregation tasks using the aggregation pipeline.</li>
+                <li>Pipeline stages: $match, $project, $group, $sort, $limit, $skip, and others.</li>
+                <li>Aggregation operators and expressions.</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Data Modeling and Schema Design:</b>
+            <ul>
+                <li>Modeling data according to application requirements.</li>
+                <li>Embedding vs. referencing documents for relationships.</li>
+                <li>Considering data consistency, query performance, and scalability in schema design.</li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Transactions and Atomic Operations:</b>
+            <ul>
+                <li>Understanding MongoDB's support for multi-document transactions.</li>
+                <li>Performing atomic operations on single documents using operators like $inc, $set, $push, $pull, etc.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <b>Security and Authentication:</b>
+            <ul>
+                <li>Securing MongoDB deployment with authentication and authorization.</li>
+                <li>User management: creating users, assigning roles, and managing permissions.</li>
+                <li>Enabling access control features and auditing.</li>
+            </ul>
+        </section>
+    </div>
+    <!-- MONGODB CONTENT START---------------------------------------------->
+    <!-- SPRING BOOT CONTENT START---------------------------------------------->
+    <div class="content p-5" id="sb">
+        <span id="cross" onclick="undo('sb')">╳</span>
+        <h4 class="p-3 text-center">SPRING BOOT</h4>
+        <b>Introduction to Spring Boot:</b>
+        <ul>
+            <li>Key features and benefits.</li>
+            <li>Convention-over-configuration.</li>
+        </ul>
+
+        <b>Spring Boot Starters:</b>
+        <ul>
+            <li>Pre-configured templates.</li>
+            <li>Project setup simplification.</li>
+        </ul>
+
+        <b>Building a Spring Boot Application:</b>
+        <ul>
+            <li>Project creation using Maven or Gradle.</li>
+            <li>Basic application structure.</li>
+        </ul>
+
+        <b>Spring Boot Annotations:</b>
+        <ul>
+            <li>@SpringBootApplication, @RestController, @RequestMapping.</li>
+            <li>Role in simplifying configuration and routing.</li>
+        </ul>
+
+        <b>Dependency Injection in Spring Boot:</b>
+        <ul>
+            <li>Understanding the concept.</li>
+            <li>How Spring Boot manages dependencies.</li>
+        </ul>
+
+        <b>Spring Boot Auto-Configuration:</b>
+        <ul>
+            <li>Auto-configuration principles.</li>
+            <li>Automatic configuration based on dependencies.</li>
+        </ul>
+
+        <b>Spring Boot DevTools:</b>
+        <ul>
+            <li>Features and benefits.</li>
+            <li>Automatic application restarts.</li>
+        </ul>
+
+        <b>Spring Boot Data:</b>
+        <ul>
+            <li>Integration with databases using Spring Data.</li>
+            <li>CRUD operations.</li>
+        </ul>
+
+        <b>Spring Boot RESTful Services:</b>
+        <ul>
+            <li>Creating RESTful web services.</li>
+            <li>@RestController for handling HTTP requests.</li>
+        </ul>
+
+        <b>Spring Boot Security:</b>
+        <ul>
+            <li>Implementation of security features.</li>
+            <li>Authentication and authorization.</li>
+        </ul>
+
+        <b>Security and Authentication:</b>
+        <ul>
+            <li>Securing MongoDB deployment with authentication and authorization.</li>
+            <li>User management: creating users, assigning roles, and managing permissions.</li>
+            <li>Enabling access control features and auditing.</li>
+        </ul>
+
+        <b>Spring Boot Testing:</b>
+        <ul>
+            <li>Writing unit tests and integration tests.</li>
+            <li>Using JUnit and Mockito.</li>
+        </ul>
+
+        <b>Spring Boot Actuator:</b>
+        <ul>
+            <li>Monitoring and managing applications.</li>
+            <li>Health checks, metrics, and endpoints.</li>
+        </ul>
+
+        <b>Spring Boot and Microservices:</b>
+        <ul>
+            <li>Using Spring Boot in a microservices architecture.</li>
+            <li>Service discovery and communication.</li>
+        </ul>
+
+        <b>Deployment and Packaging:</b>
+        <ul>
+            <li>Packaging and deploying Spring Boot applications.</li>
+            <li>Creating executable JARs or WAR files.</li>
+        </ul>
+
+        <b>Documentation and Swagger:</b>
+        <ul>
+            <li>Generating API documentation with Swagger.</li>
+            <li>Documenting Spring Boot APIs.</li>
+        </ul>
+
+        <b>Logging and Error Handling:</b>
+        <ul>
+            <li>Configuring logging.</li>
+            <li>Implementing error handling mechanisms.</li>
+        </ul>
+
+        <b>Advanced Topics:</b>
+        <ul>
+            <li>Spring Boot profiles.</li>
+            <li>Asynchronous programming.</li>
+            <li>Reactive programming with Spring WebFlux.</li>
+        </ul>
+    </div>
+
+    <!-- SPRING BOOT CONTENT END---------------------------------------------->
+    <!-- API CONTENT END---------------------------------------------->
+    <div class="content p-5" id="api">
+        <span id="cross" onclick="undo('api')">╳</span>
+        <h4 class="p-3 text-center">RESTFULL API</h4>
+        <b>Introduction to REST:</b>
+        <ul>
+            <li>Overview of Representational State Transfer (REST).</li>
+            <li>Key principles and constraints of RESTful architecture.</li>
+        </ul>
+
+        <b>HTTP Methods in RESTful APIs:</b>
+        <ul>
+            <li>Understanding the role of HTTP methods (GET, POST, PUT, DELETE, etc.).</li>
+            <li>Mapping CRUD operations to HTTP methods.</li>
+        </ul>
+
+        <b>URI Design in RESTful APIs:</b>
+        <ul>
+            <li>Best practices for designing URIs.</li>
+            <li>Resource naming conventions.</li>
+            <li>Hierarchical URI structures.</li>
+        </ul>
+
+        <b>Request and Response in RESTful APIs:</b>
+        <ul>
+            <li>Structure of HTTP requests and responses.</li>
+            <li>Headers, status codes, and message bodies.</li>
+            <li>Handling content types (JSON, XML).</li>
+        </ul>
+
+        <b>RESTful API Authentication:</b>
+        <ul>
+            <li>Authentication methods (Basic Auth, OAuth, JWT).</li>
+            <li>Securing RESTful APIs.</li>
+            <li>Token-based authentication.</li>
+        </ul>
+
+        <b>Versioning in RESTful APIs:</b>
+        <ul>
+            <li>Different strategies for API versioning.</li>
+            <li>Header versioning, URI versioning, and content negotiation.</li>
+        </ul>
+
+        <b>RESTful API Pagination:</b>
+        <ul>
+            <li>Implementing pagination for large datasets.</li>
+            <li>Query parameters for pagination.</li>
+            <li>Hypermedia as the Engine of Application State (HATEOAS).</li>
+        </ul>
+
+        <b>RESTful API Error Handling:</b>
+        <ul>
+            <li>Standardized error responses.</li>
+            <li>HTTP status codes for different scenarios.</li>
+            <li>Providing meaningful error messages.</li>
+        </ul>
+
+        <b>RESTful API Testing:</b>
+        <ul>
+            <li>Unit testing and integration testing of APIs.</li>
+            <li>Tools for API testing (Postman, RestAssured, etc.).</li>
+            <li>Writing effective test cases.</li>
+        </ul>
+
+        <b>RESTful API Documentation:</b>
+        <ul>
+            <li>Importance of documentation in RESTful APIs.</li>
+            <li>Tools for generating API documentation (Swagger, OpenAPI).</li>
+            <li>Writing clear and concise documentation.</li>
+        </ul>
+
+        <b>RESTful API Security:</b>
+        <ul>
+            <li>Common security threats and vulnerabilities.</li>
+            <li>Implementing SSL/TLS.</li>
+            <li>Cross-Origin Resource Sharing (CORS).</li>
+        </ul>
+
+    </div>
+    <!-- API CONTENT START---------------------------------------------->
+    <!-- HTTP CONTENT START---------------------------------------------->
+    <div class="content p-5" id="http">
+        <span id="cross" onclick="undo('http')">╳</span>
+        <h4 class="p-3 text-center">HTTP METHODS</h4>
+        <b>Introduction to HTTP Methods:</b>
+        <ul>
+            <li>Overview of HTTP methods (GET, POST, PUT, DELETE, etc.).</li>
+            <li>Understanding the role of HTTP methods in web development.</li>
+        </ul>
+
+        <b>GET Method:</b>
+        <ul>
+            <li>Purpose and characteristics of the GET method.</li>
+            <li>Use cases for retrieving data from the server.</li>
+            <li>Query parameters and their role in GET requests.</li>
+        </ul>
+
+        <b>POST Method:</b>
+        <ul>
+            <li>Purpose and characteristics of the POST method.</li>
+            <li>Use cases for sending data to the server.</li>
+            <li>Request payload and content types in POST requests.</li>
+        </ul>
+
+        <b>PUT and PATCH Methods:</b>
+        <ul>
+            <li>Purpose and differences between the PUT and PATCH methods.</li>
+            <li>Use cases for updating resources on the server.</li>
+            <li>Request payload and content types in PUT and PATCH requests.</li>
+        </ul>
+
+        <b>DELETE Method:</b>
+        <ul>
+            <li>Purpose and characteristics of the DELETE method.</li>
+            <li>Use cases for deleting resources on the server.</li>
+            <li>Handling resource deletion and response codes.</li>
+        </ul>
+
+        <b>HEAD and OPTIONS Methods:</b>
+        <ul>
+            <li>Overview of the HEAD and OPTIONS methods.</li>
+            <li>Use cases and characteristics of these methods.</li>
+            <li>How HEAD and OPTIONS differ from other HTTP methods.</li>
+        </ul>
+    </div>
+    <!-- HTTP CONTENT END---------------------------------------------->
+    <!--  CONTENT START---------------------------------------------->
+    <div class="content p-5" id="json">
+        <span id="cross" onclick="undo('json')">╳</span>
+        <h4 class="p-3 text-center">JSON</h4>
+        <b>Introduction to JSON:</b>
+        <ul>
+            <li>Overview of JSON and its purpose.</li>
+            <li>Comparison with other data interchange formats.</li>
+        </ul>
+
+        <b>JSON Syntax:</b>
+        <ul>
+            <li>Basic syntax rules for JSON.</li>
+            <li>Data types supported in JSON (string, number, boolean, array, object, null).</li>
+        </ul>
+
+        <b>JSON Objects:</b>
+        <ul>
+            <li>Understanding JSON objects and their structure.</li>
+            <li>Creating and accessing object properties.</li>
+        </ul>
+
+        <b>JSON Arrays:</b>
+        <ul>
+            <li>Understanding JSON arrays and their structure.</li>
+            <li>Adding, accessing, and modifying array elements.</li>
+        </ul>
+
+        <b>JSON Data Types:</b>
+        <ul>
+            <li>Detailed explanation of JSON data types.</li>
+            <li>Examples of each data type in JSON.</li>
+        </ul>
+
+        <b>Serialization and Deserialization:</b>
+        <ul>
+            <li>Serialization: Converting objects or data structures into JSON format.</li>
+            <li>Deserialization: Converting JSON data back into objects or data structures.</li>
+        </ul>
+
+        <b>Working with Nested JSON:</b>
+        <ul>
+            <li>Handling nested objects and arrays in JSON.</li>
+            <li>Accessing and manipulating nested data.</li>
+        </ul>
+
+        <b>JSON Schema:</b>
+        <ul>
+            <li>Introduction to JSON Schema.</li>
+            <li>Validating JSON data using JSON Schema.</li>
+        </ul>
+
+        <b>Parsing JSON:</b>
+        <ul>
+            <li>Parsing JSON data in different programming languages (JavaScript, Python, Java, etc.).</li>
+            <li>Handling JSON parsing errors and exceptions.</li>
+        </ul>
+
+        <b>Manipulating JSON with JavaScript:</b>
+        <ul>
+            <li>Using built-in JavaScript methods for working with JSON data.</li>
+            <li>Modifying JSON objects and arrays dynamically.</li>
+        </ul>
+
+    </div>
+    <!-- API CONTENT START---------------------------------------------->
+    <!-- XML CONTENT START---------------------------------------------->
+    <div class="content p-5" id="xml">
+        <span id="cross" onclick="undo('xml')">╳</span>
+        <h4 class="p-3 text-center">XML</h4>
+        <b>Introduction to XML:</b>
+        <ul>
+            <li>Overview of XML and its purpose.</li>
+            <li>Comparison with other markup languages (HTML, JSON).</li>
+        </ul>
+
+        <b>XML Syntax:</b>
+        <ul>
+            <li>Basic syntax rules for XML.</li>
+            <li>Elements, attributes, and text nodes.</li>
+        </ul>
+
+        <b>XML Document Structure:</b>
+        <ul>
+            <li>Understanding the structure of an XML document.</li>
+            <li>Root element, child elements, and nesting.</li>
+        </ul>
+
+        <b>XML Declaration and Document Type Definition (DTD):</b>
+        <ul>
+            <li>Using the XML declaration to specify the XML version and encoding.</li>
+            <li>Defining document structure and data types using DTD.</li>
+        </ul>
+
+        <b>XML Namespaces:</b>
+        <ul>
+            <li>Understanding XML namespaces and their role in avoiding naming conflicts.</li>
+            <li>Declaring and using XML namespaces.</li>
+        </ul>
+
+        <b>XML Schema (XSD):</b>
+        <ul>
+            <li>Introduction to XML Schema Definition (XSD).</li>
+            <li>Defining data types, elements, and constraints in XML Schema.</li>
+        </ul>
+
+        <b>XML Processing Instructions:</b>
+        <ul>
+            <li>Using processing instructions to provide instructions to XML processors.</li>
+            <li>Examples of common processing instructions.</li>
+        </ul>
+
+        <b>XPath:</b>
+        <ul>
+            <li>Introduction to XPath (XML Path Language).</li>
+            <li>Selecting elements and attributes in an XML document using XPath expressions.</li>
+        </ul>
+
+        <b>XSLT (Extensible Stylesheet Language Transformations):</b>
+        <ul>
+            <li>Transforming XML documents into different formats using XSLT.</li>
+            <li>Applying stylesheets and templates to XML data.</li>
+        </ul>
+
+        <b>XML Parsing:</b>
+        <ul>
+            <li>Parsing XML documents in different programming languages (Java, Python, C#, etc.).</li>
+            <li>Using DOM (Document Object Model) and SAX (Simple API for XML) parsers.</li>
+        </ul>
+
+        <b>XML Serialization and Deserialization:</b>
+        <ul>
+            <li>Serializing objects or data structures into XML format.</li>
+            <li>Deserializing XML data back into objects or data structures.</li>
+        </ul>
+
+        <b>XML Validation:</b>
+        <ul>
+            <li>Validating XML documents against a DTD or XSD schema.</li>
+            <li>Handling validation errors and exceptions.</li>
+        </ul>
+
+        <b>XML Technologies for Web Services:</b>
+        <ul>
+            <li>Using XML-based technologies (SOAP, WSDL) for web services.</li>
+            <li>Building and consuming SOAP-based web services.</li>
+        </ul>
+
+        <b>XML and Database Integration:</b>
+        <ul>
+            <li>Storing and querying XML data in relational databases (XML databases).</li>
+            <li>Using XML in database management systems (XML data types, XQuery).</li>
+        </ul>
+
+    </div>
+
+    <!-- XML CONTENT START---------------------------------------------->
+    <!-- Authentication CONTENT START --------------------------------------->
+    <div class="content p-5" id="auth">
+        <span id="cross" onclick="undo('auth')">╳</span>
+        <h4 class="p-3 text-center">Authentication</h4>
+        <p>Authentication is the process of verifying the identity of an individual, system, or entity attempting to
+            access a particular resource or service. It ensures that the user or system is who or what they claim to be
+            before granting access. Authentication is crucial for maintaining security and controlling access to
+            sensitive
+            information or systems.</p>
+        <b>Username and Password </b>
+        <p><b>Username :</b> A username is a unique identifier chosen by the user during the registration process. It's
+            typically
+            a string of characters that helps distinguish one user from another. Usernames are often displayed publicly
+            within a system, such as on a profile page or when interacting with other users.</p>
+        <p><b>Password :</b>A password is a confidential string of characters chosen by the user to prove their
+            identity.
+            It acts as a secret key that only the user should know. Passwords are kept private and should not be shared
+            with
+            others. They are used to authenticate the user's identity during login attempts.</p>
+        <b>OAuth :</b>
+        <p>OAuth (Open Authorization) is an open standard for access delegation commonly used as a means for websites or
+            applications to grant third-party access to resources without sharing passwords. It enables users to grant
+            access to their resources stored on one site to another site, without sharing their credentials (such as
+            username and password). OAuth is widely used by major companies like Google, Facebook, Twitter, and others
+            to
+            allow users to grant third-party access to their information.</p>
+        <b>Multi-Factor Authentication (MFA) :</b>
+        <p>Multi-Factor Authentication (MFA) is an authentication method that requires users to provide two or more
+            different factors to verify their identity before granting access to a system, application, or service. MFA
+            adds
+            an extra layer of security beyond just a username and password combination, making it more difficult for
+            unauthorized users to gain access.</p>
+        <b>JSON Web Tokens (JWT) :</b>
+        <p>JSON Web Tokens (JWT) are a compact, URL-safe means of representing claims to be transferred between two
+            parties. They are designed to be easy to use for both clients and servers, and they allow information to be
+            verified and trusted because it is digitally signed. JWTs can be signed using a secret (with the HMAC
+            algorithm)
+            or a public/private key pair using RSA or ECDSA.</p>
+        <b>Session-based Authentication :</b>
+        <p>Session-based authentication is a method used by web applications to manage user authentication and
+            authorization. It relies on the concept of sessions, which are temporary storage areas created on the server
+            to
+            store user-specific information during a user's interaction with the application.</p>
+        <b>Time-based One-Time Passwords (TOTP) :</b>
+        <p>Time-based One-Time Passwords (TOTP) are a type of two-factor authentication (2FA) method commonly used to
+            enhance the security of online accounts and systems. TOTP relies on the generation of unique, time-based
+            codes
+            that are valid for only a short period of time and require the use of a shared secret between the user and
+            the
+            service provider.</p>
+        <b>Passwordless Authentication :</b>
+        <p>Passwordless authentication is a method of verifying a user's identity without requiring them to enter a
+            traditional password. Instead of relying solely on something the user knows (i.e., a password), passwordless
+            authentication methods typically use something the user has (e.g., a mobile device, email address) or
+            something
+            the user is (e.g., biometric data) to authenticate.</p>
+        <b>Brute Force Protection :</b>
+        <p>Brute force protection is a set of security measures implemented to prevent or mitigate brute force attacks.
+            In
+            a brute force attack, an attacker systematically tries all possible combinations of usernames, passwords, or
+            encryption keys until the correct one is found. Brute force attacks are typically automated and can be used
+            to
+            gain unauthorized access to systems, applications, or accounts.</p>
+    </div>
+    <!-- Authentication CONTENT END --------------------------------------->
+    <!-- NodeJS ST -->
+    <div class="content p-5" id="nj">
+        <span id="cross" onclick="undo('nj')">╳</span>
+        <h4 class="p-3 text-center">NODE JS</h4>
+        <p>Node.js is an open-source, server-side JavaScript runtime environment built on Chrome's V8 JavaScript engine.
+            It allows developers to run JavaScript code outside of a web browser, enabling server-side scripting and the
+            development of scalable, high-performance web applications.</p>
+        <ul>
+            <li><b>Asynchronous and Event-Driven:</b> Node.js uses an event-driven, non-blocking I/O model, making it
+                lightweight and efficient for handling concurrent connections and high-throughput applications. This
+                asynchronous architecture allows Node.js to scale easily and handle thousands of concurrent connections
+                without blocking the execution thread.</li>
+            <li><b>Single-Threaded, Non-Blocking:</b> Node.js operates on a single-threaded event loop, which handles
+                all I/O operations asynchronously. This non-blocking nature allows Node.js to handle multiple requests
+                simultaneously without creating new threads for each request, resulting in improved performance and
+                resource utilization.</li>
+            <li><b>Module Ecosystem:</b> Node.js has a vast ecosystem of modules and packages available through the Node
+                Package Manager (NPM). NPM is the largest package registry in the world, with thousands of reusable
+                modules for various purposes, such as web frameworks, database connectors, utility libraries, and more.
+            </li>
+            <li><b>Highly Scalable:</b> Node.js is well-suited for building highly scalable applications due to its
+                non-blocking I/O model and lightweight architecture. It is commonly used for building real-time
+                applications, APIs, microservices, and web sockets, where scalability and performance are critical.</li>
+            <li><b>Server-Side Development:</b> Node.js is primarily used for server-side development, allowing
+                developers to create web servers, API servers, and backend services using JavaScript. It provides
+                built-in modules like HTTP and HTTPS for handling web server operations, making it easy to create custom
+                server logic.</li>
+            <li><b>JavaScript Everywhere:</b> Node.js enables developers to use JavaScript for both client-side and
+                server-side development, providing a unified language and ecosystem for full-stack development. This
+                allows developers to share code between the client and server, improving code reusability and developer
+                productivity.</li>
+            <li><b>Community and Support:</b> Node.js has a large and active community of developers who contribute to
+                its ongoing development and improvement. The Node.js community provides extensive documentation,
+                tutorials, and support channels to help developers learn and adopt Node.js in their projects.</li>
+        </ul>
+    </div>
+    <!-- NodeJS END -->
+    <!-- Ruby ST -->
+    <div class="content p-5" id="ruby">
+        <span id="cross" onclick="undo('ruby')">╳</span>
+        <h4 class="p-3 text-center">RUBY</h4>
+        <p>Ruby is an open-source, object-oriented programming language known for its simplicity and productivity. It
+            was designed and developed by Yukihiro Matsumoto ("Matz") in the mid-1990s with an emphasis on
+            human-readable syntax and programmer happiness. Ruby is often used for web development, scripting,
+            automation, and prototyping.</p>
+        <ul>
+            <li><b>Simple and Elegant Syntax:</b> Ruby features a clean and intuitive syntax that emphasizes readability
+                and expressiveness. It uses natural language constructs and follows the principle of least surprise,
+                making it easy for developers to write and understand code.</li>
+            <li><b>Object-Oriented:</b> Ruby is a pure object-oriented programming language, where everything is an
+                object. It supports features like classes, inheritance, encapsulation, and polymorphism, allowing
+                developers to build modular and reusable code.</li>
+            <li><b>Dynamically Typed:</b> Ruby is dynamically typed, meaning variable types are determined at runtime
+                rather than compile-time. This flexibility allows for rapid development and iteration but may require
+                additional testing to catch type-related errors.</li>
+            <li><b>Meta-Programming:</b> Ruby has powerful meta-programming capabilities that allow developers to modify
+                and extend the language itself. This enables advanced features like method_missing, class_eval, and
+                define_method, enabling developers to write concise and expressive code.</li>
+            <li><b>Rich Standard Library:</b> Ruby comes with a comprehensive standard library that provides a wide
+                range of built-in classes and modules for common tasks such as file I/O, string manipulation,
+                networking, and more. This reduces the need for external dependencies and simplifies development.</li>
+            <li><b>Community and Ecosystem:</b> Ruby has a vibrant and supportive community of developers who contribute
+                libraries, frameworks, and tools to the Ruby ecosystem. The RubyGems package manager provides access to
+                thousands of third-party libraries, making it easy to extend Ruby's functionality.</li>
+            <li><b>Web Development:</b> Ruby is commonly used for web development, with popular frameworks like Ruby on
+                Rails, Sinatra, and Hanami. Ruby on Rails, in particular, is a full-stack web framework that emphasizes
+                convention over configuration and enables rapid development of database-driven web applications.</li>
+            <li><b>Scripting and Automation:</b> Ruby's concise syntax and expressive features make it well-suited for
+                scripting and automation tasks. It is often used for writing system utilities, command-line tools, and
+                automation scripts, thanks to its built-in support for text processing, file handling, and process
+                management.</li>
+        </ul>
+    </div>
+    <!-- Ruby END -->
+    <!-- C# ST -->
+    <div class="content p-5" id="c#">
+        <span id="cross" onclick="undo('c#')">╳</span>
+        <h4 class="p-3 text-center">C#</h4>
+        <p>C# (pronounced "C sharp") is a modern, object-oriented programming language developed by Microsoft as part of
+            its .NET framework. It was designed to be simple, type-safe, and versatile, with features that support a
+            wide range of application development scenarios, including desktop, web, mobile, and cloud-based
+            applications.</p>
+        <ul>
+            <li><b>Object-Oriented:</b> C# is a powerful object-oriented programming language, providing support for
+                features like classes, inheritance, polymorphism, encapsulation, and abstraction. It allows developers
+                to model real-world entities and build modular, reusable code.</li>
+            <li><b>Type-Safe:</b> C# is a statically typed language, which means variable types are determined at
+                compile-time. This helps catch errors early in the development process and promotes code reliability and
+                robustness.</li>
+            <li><b>Managed Memory:</b> C# runs on the Common Language Runtime (CLR), which provides automatic memory
+                management through garbage collection. This relieves developers from manually managing memory allocation
+                and deallocation, reducing the risk of memory leaks and memory-related bugs.</li>
+            <li><b>Extensive Standard Library:</b> C# comes with a rich standard library, known as the .NET framework
+                class library (FCL), which provides a wide range of built-in classes and APIs for common tasks such as
+                file I/O, networking, data access, and XML processing. This simplifies development and reduces the need
+                for external dependencies.</li>
+            <li><b>Language Integrated Query (LINQ):</b> C# features Language Integrated Query (LINQ), a powerful query
+                language that allows developers to query and manipulate data from different data sources (e.g.,
+                collections, databases, XML) using a unified syntax. LINQ improves code readability and productivity by
+                eliminating the need for separate query languages or APIs.</li>
+            <li><b>Asynchronous Programming:</b> C# provides built-in support for asynchronous programming through
+                keywords like async and await. Asynchronous programming allows developers to write non-blocking,
+                responsive code that can handle concurrent operations efficiently, improving application performance and
+                responsiveness.</li>
+            <li><b>Platform Independence:</b> C# is designed to be platform-independent, allowing developers to build
+                applications that can run on multiple platforms, including Windows, macOS, and Linux. This is made
+                possible by the cross-platform .NET Core runtime, which enables C# applications to run on any platform
+                that supports .NET Core.</li>
+            <li><b>Integration with Visual Studio:</b> C# is tightly integrated with Microsoft's Visual Studio
+                development environment, providing powerful tools and features for code editing, debugging, testing, and
+                deployment. Visual Studio offers a comprehensive development experience for C# developers, streamlining
+                the development process and enhancing productivity.</li>
+        </ul>
+    </div>
+    <!-- C# END -->
+    <!-- PostgreSQL ST -->
+    <div class="content p-5" id="postsql">
+        <span id="cross" onclick="undo('postsql')">╳</span>
+        <h4 class="p-3 text-center">PostgreSQL</h4>
+        <p>PostgreSQL is a powerful, open-source relational database management system (RDBMS) known for its
+            reliability, robustness, and advanced features. It is commonly used for storing and managing structured data
+            in a wide range of applications, from small-scale projects to large-scale enterprise systems.</p>
+        <ul>
+            <li><b>Relational Database:</b> PostgreSQL is a relational database system based on the SQL (Structured
+                Query Language) standard. It supports relational data modeling, tables, rows, and columns, making it
+                suitable for storing structured data and enforcing data integrity through constraints and relationships.
+            </li>
+            <li><b>ACID Compliance:</b> PostgreSQL is ACID (Atomicity, Consistency, Isolation, Durability) compliant,
+                ensuring transactional integrity and reliability. It provides mechanisms for managing transactions,
+                ensuring that database operations are executed reliably and consistently even in the presence of
+                failures or concurrent access.</li>
+            <li><b>Extensible and Customizable:</b> PostgreSQL is highly extensible and customizable, allowing users to
+                define custom data types, functions, and extensions to meet specific application requirements. It
+                supports procedural languages like PL/pgSQL, PL/Python, and PL/Perl, enabling developers to write custom
+                business logic directly in the database.</li>
+            <li><b>Advanced Features:</b> PostgreSQL offers a wide range of advanced features, including support for
+                JSON and XML data types, full-text search, geospatial data processing, and advanced indexing techniques.
+                It also provides features like table partitioning, materialized views, and foreign data wrappers for
+                integrating with external data sources.</li>
+            <li><b>Scalability and Performance:</b> PostgreSQL is designed for scalability and high performance,
+                supporting multi-version concurrency control (MVCC), parallel query processing, and asynchronous
+                replication. It can handle large volumes of data and high transaction loads efficiently, making it
+                suitable for demanding production environments.</li>
+            <li><b>Community and Ecosystem:</b> PostgreSQL has a vibrant and active community of developers and users
+                who contribute to its development and support. The PostgreSQL Global Development Group oversees the
+                development of PostgreSQL and releases regular updates and patches to address bugs, security
+                vulnerabilities, and performance improvements.</li>
+            <li><b>Open Source and Cross-Platform:</b> PostgreSQL is open-source software released under the PostgreSQL
+                License, allowing users to use, modify, and distribute it freely. It runs on various operating systems,
+                including Linux, macOS, and Windows, making it accessible and widely adopted across different platforms.
+            </li>
+        </ul>
+    </div>
+    <!-- PostgreSQL END -->
+    <!-- SQLite ST -->
+    <div class="content p-5" id="SQLite">
+        <span id="cross" onclick="undo('sqlite')">╳</span>
+        <h4 class="p-3 text-center">sqlite</h4>
+        <p>
+            SQLite is a lightweight, self-contained, and serverless relational database management system (RDBMS) that
+            operates based on the SQL (Structured Query Language) standard. It is designed for simplicity, efficiency,
+            and ease of use, making it suitable for a wide range of applications, including embedded systems, mobile
+            apps, and small-scale projects.
+        </p>
+        <ul>
+            <li><b>Relational Database:</b> SQLite is a relational database management system based on the SQL
+                (Structured Query Language) standard. It allows users to define, manipulate, and query relational data
+                using SQL commands. SQLite databases are stored as single files, making them easy to manage and
+                transport.</li>
+            <li><b>Self-Contained:</b> SQLite is self-contained and serverless, meaning it doesn't require a separate
+                server process to operate. Applications interact with SQLite databases directly through a library API.
+                This lightweight architecture makes SQLite suitable for embedded systems, mobile applications, and
+                small-scale projects.</li>
+            <li><b>Zero Configuration:</b> SQLite requires minimal configuration and setup. Since it doesn't have a
+                separate server process, there's no need to install or configure server software. Developers can start
+                using SQLite by simply including the SQLite library in their application and accessing the database
+                file.</li>
+            <li><b>Transactional:</b> SQLite supports ACID (Atomicity, Consistency, Isolation, Durability) transactions,
+                ensuring data integrity and reliability. It provides mechanisms for managing transactions, rollback
+                operations, and recovering from failures, making it suitable for applications that require transactional
+                support.</li>
+            <li><b>Portable:</b> SQLite databases are portable and platform-independent. The database file format is
+                cross-platform compatible, allowing databases to be transferred and used across different operating
+                systems and architectures without modification.</li>
+            <li><b>Embeddable:</b> SQLite is designed to be embedded directly into applications as a library. It has a
+                small footprint and low resource requirements, making it ideal for use in resource-constrained
+                environments. Developers can embed SQLite into their applications to add data storage and management
+                capabilities.</li>
+            <li><b>Open Source:</b> SQLite is open-source software released under the public domain, allowing users to
+                use, modify, and distribute it freely. The source code is publicly available and can be accessed and
+                modified by anyone, encouraging collaboration and innovation within the developer community.</li>
+        </ul>
+    </div>
+    <!-- SQLite END -->
+    <!-- Cassandra ST -->
+    <div class="content p-5" id="cass">
+        <span id="cross" onclick="undo('cass')">╳</span>
+        <h4 class="p-3 text-center">Cassandra</h4>
+        <p>
+            Apache Cassandra is a distributed and decentralized NoSQL database management system designed for high
+            availability, scalability, and fault tolerance. It is optimized for handling large volumes of data across
+            multiple nodes in a distributed cluster, making it suitable for use cases requiring high throughput and
+            low-latency data access.
+        </p>
+        <ul>
+            <li><b>Distributed Architecture:</b> Cassandra uses a decentralized peer-to-peer architecture, where each
+                node in the cluster is identical and independent. Data is distributed across multiple nodes in the
+                cluster using a partitioning scheme, ensuring data redundancy and fault tolerance.</li>
+            <li><b>High Availability:</b> Cassandra is designed for high availability, with no single point of failure.
+                It supports data replication across multiple nodes, ensuring that data remains available even in the
+                event of node failures or network partitions.</li>
+            <li><b>Scalability:</b> Cassandra is horizontally scalable, allowing users to add or remove nodes to the
+                cluster dynamically as data volumes and workloads change. It can handle petabytes of data and millions
+                of transactions per second by distributing data and workload across multiple nodes.</li>
+            <li><b>Linear Performance:</b> Cassandra offers linear scalability and performance, meaning that adding
+                additional nodes to the cluster increases both storage capacity and processing power proportionally.
+                This allows Cassandra to maintain consistent performance even as the cluster grows in size.</li>
+            <li><b>NoSQL Data Model:</b> Cassandra follows a NoSQL data model, providing flexible schema design and
+                support for unstructured or semi-structured data. It uses a distributed hash table (DHT) for data
+                distribution and replication, allowing for efficient data storage and retrieval.</li>
+            <li><b>Tunable Consistency:</b> Cassandra offers tunable consistency levels, allowing users to trade off
+                consistency for availability and performance based on application requirements. It supports eventual
+                consistency, strong consistency, and various consistency levels in between.</li>
+            <li><b>Wide Column Store:</b> Cassandra is based on a wide-column store data model, where data is organized
+                into rows and columns. It supports efficient storage and retrieval of wide rows with millions of
+                columns, making it suitable for time-series data, sensor data, and other high-volume workloads.</li>
+            <li><b>Community Support:</b> Cassandra is an open-source project maintained by the Apache Software
+                Foundation. It has a large and active community of developers and users who contribute to its
+                development, provide support, and share best practices.</li>
+        </ul>
+    </div>
+    <!-- Cassandra END -->
+    <!-- Redis ST -->
+    <div class="content p-5" id="redis">
+        <span id="cross" onclick="undo('redis')">╳</span>
+        <h4 class="p-3 text-center">Redis</h4>
+        <p>
+            Redis is an open-source, in-memory data structure store used as a database, cache, and message broker. It
+            supports various data structures such as strings, hashes, lists, sets, and sorted sets, and provides high
+            performance, scalability, and reliability for real-time applications.
+        </p>
+        <ul>
+            <li><b>In-Memory Data Store:</b> Redis stores data in memory, allowing for extremely fast read and write
+                operations. It is optimized for low-latency data access, making it suitable for use cases requiring
+                real-time data processing.</li>
+            <li><b>Key-Value Store:</b> Redis is a key-value store, where each piece of data is associated with a unique
+                key. It supports atomic operations on keys and values, making it efficient for storing and retrieving
+                individual data items.</li>
+            <li><b>Data Structures:</b> Redis provides a rich set of data structures such as strings, hashes, lists,
+                sets, and sorted sets. These data structures offer flexibility and versatility in storing and
+                manipulating different types of data.</li>
+            <li><b>Persistence:</b> Redis supports both in-memory and disk-backed persistence options. It can persist
+                data to disk asynchronously or synchronously, ensuring data durability and recovery in case of system
+                failures.</li>
+            <li><b>Pub/Sub Messaging:</b> Redis includes built-in support for publish/subscribe messaging patterns. It
+                allows clients to subscribe to channels and receive messages published by other clients, enabling
+                real-time communication and event-driven architectures.</li>
+            <li><b>Replication and High Availability:</b> Redis supports master-slave replication for high availability
+                and fault tolerance. It allows for the automatic failover of master nodes to replicas in case of
+                failures, ensuring continuous service availability.</li>
+            <li><b>Partitioning and Sharding:</b> Redis supports partitioning and sharding to distribute data across
+                multiple nodes in a cluster. It allows for horizontal scaling by splitting data into smaller partitions
+                and distributing them across multiple servers.</li>
+            <li><b>Scripting and Lua Integration:</b> Redis provides support for server-side scripting using the Lua
+                programming language. It allows users to define custom commands and execute complex operations directly
+                on the server, enhancing flexibility and performance.</li>
+            <li><b>Community Support:</b> Redis has a vibrant community of developers and users who contribute to its
+                development and support. It offers extensive documentation, tutorials, and resources to help users get
+                started and address any issues they encounter.</li>
+        </ul>
+
+    </div>
+    <!-- Redis END -->
+    <!-- Django ST -->
+    <div class="content p-5" id="dj">
+        <span id="cross" onclick="undo('dj')">╳</span>
+        <h4 class="p-3 text-center">Django</h4>
+        <p>
+            Django is a high-level Python web framework that facilitates the development of web applications by
+            providing a pragmatic, clean, and efficient design. It follows the "batteries-included" philosophy, offering
+            a wide range of built-in features and tools to simplify common web development tasks.
+        </p>
+        <ul>
+            <li><b>Model-View-Controller (MVC) Architecture:</b> Django follows the MVC architectural pattern, where the
+                Model represents the data structure, the View handles user interface logic, and the Controller manages
+                the flow of data between the Model and View.</li>
+            <li><b>Object-Relational Mapping (ORM):</b> Django includes a powerful ORM that abstracts database access
+                and allows developers to interact with the database using Python objects. It supports multiple database
+                backends, including PostgreSQL, MySQL, SQLite, and Oracle.</li>
+            <li><b>Admin Interface:</b> Django provides an automatically generated admin interface for managing website
+                content. Developers can use the admin interface to create, read, update, and delete database records
+                without writing custom code.</li>
+            <li><b>URL Routing and View Templates:</b> Django uses a URL routing mechanism to map URLs to view
+                functions, which generate HTTP responses. View templates, written in Django's template language, allow
+                developers to create dynamic HTML pages by combining static content with data from the server.</li>
+            <li><b>Form Handling:</b> Django simplifies form handling by providing a form library that allows developers
+                to define forms in Python classes. It includes features for validating form data, rendering form fields,
+                and handling form submissions.</li>
+            <li><b>Authentication and Authorization:</b> Django includes built-in support for user authentication and
+                authorization. It provides features for user registration, login, logout, and password management, as
+                well as role-based access control (RBAC) using permissions and groups.</li>
+            <li><b>Security Features:</b> Django includes various security features to protect web applications from
+                common vulnerabilities. These features include protection against cross-site scripting (XSS), cross-site
+                request forgery (CSRF), SQL injection, and clickjacking attacks.</li>
+            <li><b>Internationalization and Localization:</b> Django supports internationalization (i18n) and
+                localization (l10n) features, allowing developers to create multilingual websites. It provides tools for
+                translating text strings, formatting dates, times, and numbers according to different locales.</li>
+            <li><b>RESTful APIs:</b> Django offers support for building RESTful APIs using the Django REST Framework
+                (DRF). DRF provides serializers, views, and authentication mechanisms for creating APIs that follow
+                RESTful principles.</li>
+            <li><b>Community and Ecosystem:</b> Django has a large and active community of developers who contribute to
+                its development, share knowledge, and provide support. It offers extensive documentation, tutorials, and
+                third-party packages to enhance and extend Django's capabilities.</li>
+        </ul>
+
+    </div>
+    <!-- Django END -->
+    <!-- Laravel ST -->
+    <div class="content p-5" id="lara">
+        <span id="cross" onclick="undo('lara')">╳</span>
+        <h4 class="p-3 text-center">Laravel</h4>
+        <p>
+            Laravel is a powerful PHP web framework that enables developers to build modern, feature-rich web
+            applications quickly and efficiently. It follows the model-view-controller (MVC) architectural pattern and
+            emphasizes simplicity, elegance, and readability.
+        </p>
+        <ul>
+            <li><b>Expressive Syntax:</b> Laravel provides an expressive and intuitive syntax that simplifies common web
+                development tasks, allowing developers to write clean and concise code.</li>
+            <li><b>Modular Packaging System:</b> Laravel features a modular packaging system called Composer, which
+                allows developers to easily add functionality to their applications by installing and managing
+                dependencies.</li>
+            <li><b>Blade Templating Engine:</b> Laravel includes the Blade templating engine, which provides powerful
+                yet simple-to-use templating features for building dynamic and reusable HTML layouts.</li>
+            <li><b>Database Migration and Seeding:</b> Laravel offers a built-in database migration and seeding system,
+                allowing developers to define and manage database schemas and seed initial data using PHP code.</li>
+            <li><b>Eloquent ORM:</b> Laravel's Eloquent ORM provides a simple and expressive way to interact with
+                databases using PHP objects. It allows developers to define database models and relationships
+                effortlessly.</li>
+            <li><b>Artisan Console:</b> Laravel includes a powerful command-line interface called Artisan, which
+                provides a range of commands for automating common development tasks, such as generating code, running
+                migrations, and managing queues.</li>
+            <li><b>Authentication and Authorization:</b> Laravel makes it easy to implement authentication and
+                authorization in web applications with built-in features like user registration, login, password reset,
+                and role-based access control (RBAC).</li>
+            <li><b>Middleware:</b> Laravel's middleware feature allows developers to filter HTTP requests entering the
+                application. It can be used for tasks such as authentication, logging, and CSRF protection.</li>
+            <li><b>Routing:</b> Laravel offers a simple and expressive routing system that allows developers to define
+                application routes using a clear and readable syntax. Routes can be configured to handle various HTTP
+                request methods and parameters.</li>
+            <li><b>Testing Support:</b> Laravel provides robust testing support with features like PHPUnit integration,
+                HTTP testing, database testing, and application-level testing. It encourages developers to write
+                testable and maintainable code.</li>
+            <li><b>Community and Ecosystem:</b> Laravel has a vibrant and active community of developers who contribute
+                to its development, share knowledge, and provide support. It offers extensive documentation, tutorials,
+                and third-party packages to enhance and extend Laravel's capabilities.</li>
+        </ul>
+
+    </div>
+    <!-- Laravel END -->
+    <!-- Express.js ST -->
+    <div class="content p-5" id="express">
+        <span id="cross" onclick="undo('express')">╳</span>
+        <h4 class="p-3 text-center">Express JS</h4>
+        <p>
+            Express.js, commonly referred to as Express, is a minimal and flexible Node.js web application framework
+            that provides a robust set of features for building web and mobile applications. It is designed to create
+            server-side applications and APIs quickly and easily.
+        </p>
+        <ul>
+            <li><b>Middleware:</b> Express.js features middleware, which are functions that have access to the request
+                and response objects and can execute code before or after handling a request. Middleware functions can
+                be used for tasks such as logging, authentication, error handling, and more.</li>
+            <li><b>Routing:</b> Express provides a simple and expressive routing mechanism that allows developers to
+                define routes for different HTTP methods (GET, POST, PUT, DELETE, etc.) and URL paths. Routes can be
+                used to handle incoming requests and execute specific logic or send responses.</li>
+            <li><b>Template Engines:</b> Express supports various template engines like EJS, Pug (formerly Jade),
+                Handlebars, and more, allowing developers to dynamically generate HTML markup and render views based on
+                data from the server.</li>
+            <li><b>HTTP Utility Methods:</b> Express provides utility methods for handling HTTP requests and responses,
+                making it easy to set headers, manipulate cookies, send files, and perform other HTTP-related tasks.
+            </li>
+            <li><b>Static File Serving:</b> Express allows developers to serve static files (such as HTML, CSS,
+                JavaScript, images, and other assets) from a directory on the server, making it simple to serve
+                client-side resources without additional configuration.</li>
+            <li><b>Error Handling:</b> Express offers built-in error handling mechanisms that allow developers to define
+                error-handling middleware to catch and handle errors that occur during request processing. This ensures
+                that errors are gracefully handled and appropriate responses are sent to clients.</li>
+            <li><b>RESTful API Development:</b> Express is commonly used for building RESTful APIs due to its
+                lightweight and minimalist nature. It provides features like route handlers, request validation,
+                response formatting, and middleware support, making it ideal for building API endpoints.</li>
+            <li><b>Modularity and Extensibility:</b> Express is highly modular and extensible, allowing developers to
+                add additional functionality through third-party middleware, plugins, and modules. This enables
+                developers to customize and extend Express to meet the specific requirements of their applications.</li>
+            <li><b>Community and Ecosystem:</b> Express has a large and active community of developers who contribute to
+                its development, share knowledge, and provide support. It offers extensive documentation, tutorials, and
+                libraries to help developers get started with Express and build robust web applications.</li>
+        </ul>
+
+    </div>
+    <!-- Express.js END -->
+    <!-- Ruby on Rails ST -->
+    <div class="content p-5" id="rubyon">
+        <span id="cross" onclick="undo('rubyon')">╳</span>
+        <h4 class="p-3 text-center">Ruby on Rails</h4>
+        <p>
+            Ruby on Rails, commonly referred to as Rails, is a popular open-source web application framework written in
+            the Ruby programming language. It follows the Model-View-Controller (MVC) architectural pattern and aims to
+            simplify the development of web applications by providing conventions for common tasks.
+        </p>
+        <ul>
+            <li><b>Convention over Configuration:</b> Ruby on Rails promotes the principle of "convention over
+                configuration," which means that developers only need to specify unconventional aspects of their
+                application. Rails uses sensible defaults and conventions to reduce the amount of boilerplate code and
+                configuration required.</li>
+            <li><b>Model-View-Controller (MVC) Architecture:</b> Rails organizes applications based on the MVC
+                architectural pattern, separating the application's data (model), user interface (view), and business
+                logic (controller) into distinct components. This separation of concerns improves code organization,
+                maintainability, and testability.</li>
+            <li><b>Active Record ORM:</b> Rails includes Active Record, an object-relational mapping (ORM) framework
+                that simplifies database interactions by mapping database tables to Ruby objects. Active Record provides
+                convenient methods for querying, creating, updating, and deleting records, abstracting away the
+                complexities of SQL.</li>
+            <li><b>RESTful Routing:</b> Rails encourages the use of RESTful routing for defining application routes,
+                following REST (Representational State Transfer) principles. Routes are defined using resourceful
+                routing conventions, making it easy to create CRUD (Create, Read, Update, Delete) operations for
+                resources.</li>
+            <li><b>Automatic Code Generation:</b> Rails provides a set of command-line tools, known as generators, for
+                automating repetitive tasks like creating models, controllers, views, migrations, and more. Generators
+                scaffold the initial code structure based on predefined templates, allowing developers to quickly
+                bootstrap new features.</li>
+            <li><b>Convention-based Testing:</b> Rails includes built-in support for testing, with a focus on
+                behavior-driven development (BDD) and test-driven development (TDD) practices. It includes testing
+                frameworks like RSpec and MiniTest, along with tools for writing unit tests, integration tests, and
+                system tests.</li>
+            <li><b>Active Support Library:</b> Rails comes with the Active Support library, which provides a collection
+                of utility classes, methods, and extensions to enhance Ruby's core functionality. Active Support
+                includes features like date and time manipulation, internationalization, caching, and more.</li>
+            <li><b>Security Features:</b> Rails includes built-in security features to protect against common web
+                application vulnerabilities, such as cross-site scripting (XSS), cross-site request forgery (CSRF), SQL
+                injection, and session management issues. It provides mechanisms for parameter sanitization, CSRF
+                protection, secure session storage, and more.</li>
+            <li><b>Scalability and Performance:</b> Rails is designed to scale with the needs of growing applications,
+                with features like database connection pooling, caching, background job processing, and load balancing.
+                It provides tools and best practices for optimizing application performance and handling high traffic
+                volumes.</li>
+            <li><b>Community and Ecosystem:</b> Ruby on Rails has a vibrant community of developers who contribute to
+                its development, share knowledge, and provide support. The Rails ecosystem includes a rich collection of
+                gems (Ruby libraries), plugins, tutorials, and resources to help developers build and maintain Rails
+                applications efficiently.</li>
+        </ul>
+
+    </div>
+    <!-- Ruby on Rails END -->
+    <!-- ASP.NET ST -->
+    <div class="content p-5" id="net">
+        <span id="cross" onclick="undo('net')">╳</span>
+        <h4 class="p-3 text-center">ASP.NET</h4>
+        <p>
+            ASP.NET is a popular open-source web development framework developed by Microsoft for building dynamic web
+            applications and services. It allows developers to create web applications using a variety of programming
+            languages, including C#, Visual Basic, and F#. ASP.NET provides a comprehensive set of tools, libraries, and
+            APIs for building modern, scalable, and secure web applications.
+        </p>
+        <ul>
+            <li><b>Model-View-Controller (MVC) Architecture:</b> ASP.NET supports the Model-View-Controller (MVC)
+                architectural pattern, which separates the application's data (model), user interface (view), and
+                business logic (controller) into distinct components. MVC promotes code organization, maintainability,
+                and testability.</li>
+            <li><b>Web Forms:</b> ASP.NET Web Forms is a framework for building web applications using event-driven,
+                stateful programming models. It simplifies the development of complex web applications by providing
+                familiar controls, server-side event handling, and view state management.</li>
+            <li><b>ASP.NET Core:</b> ASP.NET Core is the latest version of the ASP.NET framework, designed to be
+                cross-platform, modular, and high-performance. It enables developers to build web applications and
+                services that run on Windows, macOS, and Linux, using a unified and lightweight framework.</li>
+            <li><b>Integrated Development Environment (IDE):</b> ASP.NET development is supported by Microsoft Visual
+                Studio, an integrated development environment (IDE) with powerful tools for code editing, debugging, and
+                deployment. Visual Studio provides a rich set of features for building, testing, and deploying ASP.NET
+                applications.</li>
+            <li><b>Server-side Programming:</b> ASP.NET allows developers to write server-side code using languages like
+                C#, Visual Basic, and F#. Server-side code can handle incoming HTTP requests, process data, interact
+                with databases, and generate dynamic HTML content to be sent back to the client.</li>
+            <li><b>Client-side Development:</b> ASP.NET supports client-side development using JavaScript, HTML, and
+                CSS. It provides tools and libraries for integrating client-side frameworks like React, Angular, and
+                Vue.js into ASP.NET applications, enabling rich and interactive user experiences.</li>
+            <li><b>Security Features:</b> ASP.NET includes built-in security features to protect web applications
+                against common threats and vulnerabilities. It provides mechanisms for authentication, authorization,
+                input validation, cross-site scripting (XSS) prevention, cross-site request forgery (CSRF) protection,
+                and more.</li>
+            <li><b>Scalability and Performance:</b> ASP.NET is designed to scale with the needs of growing applications,
+                with features like multi-threading, asynchronous programming, and load balancing. It supports caching,
+                session state management, and distributed computing to improve application performance and scalability.
+            </li>
+            <li><b>Community and Ecosystem:</b> ASP.NET has a large and active community of developers, enthusiasts, and
+                contributors who share knowledge, contribute to open-source projects, and provide support. The ASP.NET
+                ecosystem includes a wide range of libraries, frameworks, and tools to enhance productivity and
+                streamline web development.</li>
+        </ul>
+
+    </div>
+    <!-- ASP.NET END -->
+    <!-- STATUS CODE CONTENT START --------------------------------------->
+    <div class="content p-5" id="status">
+        <span id="cross" onclick="undo('status')">╳</span>
+        <h4 class="p-3 text-center">Status Code</h4>
+        <p>
+            A status code is a numeric code that is sent by a server to a client as part of an HTTP response. It
+            indicates the result of the request made by the client to the server. Status codes are grouped into five
+            classes, each representing a different category of response. </p>
+        <b>Introduction to HTTP Status Codes:</b>
+        <ul>
+            <li>Overview of HTTP status codes and their significance.</li>
+            <li>Understanding the structure of an HTTP response.</li>
+        </ul>
+
+        <b>Informational Status Codes (1xx):</b>
+        <ul>
+            <li>Explanation of informational status codes (e.g., 100 Continue, 101 Switching Protocols).</li>
+            <li>Use cases and significance of these status codes.</li>
+        </ul>
+
+        <b>Success Status Codes (2xx):</b>
+        <ul>
+            <li>Explanation of success status codes (e.g., 200 OK, 201 Created).</li>
+            <li>Use cases and significance of these status codes.</li>
+        </ul>
+
+        <b>Redirection Status Codes (3xx):</b>
+        <ul>
+            <li>Explanation of redirection status codes (e.g., 301 Moved Permanently, 302 Found).</li>
+            <li>Use cases and significance of these status codes.</li>
+        </ul>
+
+        <b>Client Error Status Codes (4xx):</b>
+        <ul>
+            <li>Explanation of client error status codes (e.g., 400 Bad Request, 404 Not Found).</li>
+            <li>Common causes and troubleshooting tips for client errors.</li>
+        </ul>
+
+        <b>Server Error Status Codes (5xx):</b>
+        <ul>
+            <li>Explanation of server error status codes (e.g., 500 Internal Server Error, 503 Service Unavailable).
+            </li>
+            <li>Common causes and troubleshooting tips for server errors.</li>
+        </ul>
+
+        <b>Understanding Status Code Classes:</b>
+        <ul>
+            <li>Differentiating between status code classes (1xx, 2xx, 3xx, 4xx, 5xx).</li>
+            <li>Identifying the purpose and meaning of each class.</li>
+        </ul>
+
+        <b>Handling Status Codes in Web Development:</b>
+        <ul>
+            <li>Best practices for handling different status codes in web applications.</li>
+            <li>Implementing appropriate error handling and responses.</li>
+        </ul>
+
+        <b>Status Codes in RESTful APIs:</b>
+        <ul>
+            <li>Using status codes to indicate the outcome of RESTful API operations.</li>
+            <li>Mapping CRUD operations to status codes (e.g., POST -&gt; 201 Created, DELETE -&gt; 204 No Content).
+            </li>
+        </ul>
+
+        <b>Status Codes and SEO (Search Engine Optimization):</b>
+        <ul>
+            <li>Impact of status codes on search engine indexing and ranking.</li>
+            <li>Best practices for handling status codes to improve SEO.</li>
+        </ul>
+
+        <b>Status Code Extensions and Customization:</b>
+        <ul>
+            <li>Extending HTTP status codes for specific use cases.</li>
+            <li>Customizing status code responses in web applications.</li>
+        </ul>
+
+        <b>Status Code Tools and Testing:</b>
+        <ul>
+            <li>Tools for analyzing and testing HTTP status codes (e.g., cURL, Postman).</li>
+            <li>Writing test cases to validate status code responses.</li>
+        </ul>
+
+        <b>Monitoring and Alerting for Status Codes:</b>
+        <ul>
+            <li>Setting up monitoring and alerting systems to track status code occurrences.</li>
+            <li>Reacting to abnormal status code patterns.</li>
+        </ul>
+
+        <b>Status Code Documentation and Guidelines:</b>
+        <ul>
+            <li>Documenting status codes and their meanings in API documentation.</li>
+            <li>Establishing guidelines for consistent use and interpretation of status codes.</li>
+        </ul>
+
+        <b>Future Trends in Status Codes:</b>
+        <ul>
+            <li>Emerging trends and developments in status code usage.</li>
+            <li>Impact of new technologies (e.g., HTTP/3) on status codes.</li>
+        </ul>
+
+    </div>
+    <!-- STATUS CODE CONTENT END --------------------------------------->
+</body>
+<script src="./main.js"></script>
+
+</html>

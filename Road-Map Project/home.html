@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="header px-5">
+        <div class="logo-box d-flex" onclick="home()"></div>
+        <div class="right-side" id="rside">
+            <nav>
+                <span>About</span>
+                <span>courses</span>
+                <span>Contact</span>
+            </nav>
+            <div class="login-btn">
+                <a href="./index.html" class="btn">Login</a>
+            </div>
+        </div>
+        <i class="fa fa-bars" onclick="menu('rside')"></i>
+    </div>
+    <div class="container">
+        <div class="h1 text-center my-5">Developer Roadmaps</div>
+        <div class="row mb-4">
+            <div class="col d-flex justify-content-center gap-4">
+
+                <p onclick="location.href='./fe.html'" id="fe"
+                    class="p d-flex justify-content-center align-items-center p-3">
+                    Front-End
+                </p>
+                <p onclick="location.href='./be.html'" id="be"
+                    class="p d-flex justify-content-center align-items-center p-3">
+                    Back-End
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3" onclick="fullStack('fe', 'be')">
+                    Full-Stack
+                </p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col d-flex justify-content-center gap-4">
+                <p class="p d-flex justify-content-center align-items-center p-3">
+                    DevOps
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3">
+                    Android
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3">
+                    PostgreSQL
+                </p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col d-flex justify-content-center gap-4">
+                <p class="p d-flex justify-content-center align-items-center p-3">
+                    AI and Data Scientist
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3">
+                    BlockChain
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3">
+                    QA
+                </p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col d-flex justify-content-center gap-4">
+                <p class="p d-flex justify-content-center align-items-center p-3">
+                    Software Architect
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3">
+                    ASP.Net core
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3">
+                    C++
+                </p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col d-flex justify-content-center gap-4">
+                <p class="p d-flex justify-content-center align-items-center p-3">
+                    Data Structures
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3">
+                    Cyber Security
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3">
+                    UX Design
+                </p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col d-flex justify-content-center gap-4">
+                <p class="p d-flex justify-content-center align-items-center p-3">
+                    React Native
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3">
+                    Game Developer
+                </p>
+                <p class="p d-flex justify-content-center align-items-center p-3">
+                    Technical Writer
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer  p-5 text-white">
+        <div class="row">
+            <div class="col-3 others gen">
+                <h2>Other Road-Maps</h3>
+                    <div class="list-box mt-2">
+                        <div class="list" onclick="location.href = './fe.html'">
+                            <a href="./fe.html"><b>Front-End</b><a>
+                                    <a>HTML</a>
+                                    <a>CSS</a>
+                                    <a>JavaScript</a>
+                        </div>
+                        <div class="list" onclick="location.href = './be.html'">
+                            <a href="./be.html"><b>Back-End</b></a>
+                            <a>Java</a>
+                            <a>MySQL</ak=>
+                                <a>API</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-6 about gen">
+                <h2>About</h2>
+                <p>It seems like you're asking for a roadmap. A roadmap typically refers to a strategic plan or guide
+                    that
+                    outlines the steps needed to achieve a particular goal or objective. Since you haven't specified the
+                    topic or
+                    field, I'll provide a general roadmap for personal or professional development.</p>
+            </div>
+            <div class="col-3 gen">
+                <div class="list about">
+                    <a><b>Contact Us</b></a>
+                    <a><b>Email :</b> sample@gmail.com</a>
+                    <a><b>Help-center : </b>95******24</a>
+                    <a><b>Address : </b> State, District, City, Village </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-rights text-center py-4 text-white">
+        <b>© Copyright 2021-2024 www.Road-Map.com. All rights reserved. Developed by Astronet.</b>
+    </div>
+</body>
+<script src="./main.js"></script>
+
+</html>
